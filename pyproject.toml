@@ -1,0 +1,18 @@
+[project]
+name = "retrieval-system"
+version = "0.1.0"
+description = "Retrieval engineering project"
+requires-python = ">=3.11"
+dependencies = [
+    "arxiv>=2.1.0",
+    "psycopg[binary]>=3.2.0",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=8.0.0",
+]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
